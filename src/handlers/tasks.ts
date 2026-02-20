@@ -1,18 +1,23 @@
-import { Bot, session } from "grammy"
+import { Bot } from "grammy"
 import { BotContext } from "../bot"
 
 export const registerTaskHandlers = (bot: Bot<BotContext>) => {
     bot.on("message:text", async (ctx) => {
         const text = ctx.message.text
-        const session = ctx.session as SessionData
+        const userSession = ctx.session
 
-        session.tasks.push({ text })
+        userSession.tasks.push({ text })
 
         await ctx.reply(ctx.t("add_task"))
 
         await ctx.replyWithChecklist(
-            ctx.t("checklist_title"),
-            session.tasks.map((t) => ({ text: t.text }))
+            {
+                title: ctx.t("checklist_title"),
+                tasks: userSession.tasks.map((task, index) => ({
+                    id: index + 1,
+                    text: task.text,
+                })),
+            }
         )
     })
 }

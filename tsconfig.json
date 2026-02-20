@@ -5,6 +5,9 @@
     "moduleResolution": "Bundler",
     "outDir": "dist",
     "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
