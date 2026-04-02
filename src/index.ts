@@ -9,6 +9,10 @@ await connectDB()
 
 const bot = createBot(token)
 
+await bot.api.setMyCommands([
+    { command: "start", description: "Start or restart the application" },
+])
+
 bot.start({
     onStart: (info) => {
         console.info(`Bot started: ${info.first_name} (https://t.me/${info.username})`)

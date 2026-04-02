@@ -11,7 +11,4 @@ export class User extends TimeStamps {
 
     @prop({ type: Boolean, default: false })
     languageSelected!: boolean
-
-    @prop({ type: Boolean, default: false })
-    isPro!: boolean
 }
