@@ -12,10 +12,6 @@ export class User extends TimeStamps {
     @prop({ type: Boolean, default: false })
     languageSelected!: boolean
 
-    // paywall
-    @prop({ type: Number, default: 0 })
-    taskCount!: number
-
     @prop({ type: Boolean, default: false })
     isPro!: boolean
 }

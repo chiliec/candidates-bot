@@ -1,6 +1,6 @@
 # DoneCraftBot
 
-Telegram task manager built around native Telegram checklists.
+Telegram task manager built around checklist-style chat flow.
 
 Core idea: frictionless task capture → structured execution → daily momentum.
 
@@ -9,9 +9,9 @@ Core idea: frictionless task capture → structured execution → daily momentum
 ## ✨ Features (MVP)
 
 - Add task via message
-- Native Telegram checklists
+- Checklist-style message rendering
 - RU / EN localization
-- Session-based storage (temporary)
+- MongoDB task persistence
 - Future: recurrence, priority matrix, reminders, payments
 
 ---
