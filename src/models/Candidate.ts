@@ -1,5 +1,5 @@
 import { modelOptions, prop, Severity } from '@typegoose/typegoose'
-import { TimeStamps } from '@typegoose/typegoose/lib/defaultClasses'
+import { TimeStamps } from '@typegoose/typegoose/lib/defaultClasses.js'
 import mongoose from 'mongoose'
 
 @modelOptions({ schemaOptions: { timestamps: true }, options: { allowMixed: Severity.ALLOW } })

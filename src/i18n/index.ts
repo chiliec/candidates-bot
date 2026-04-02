@@ -1,6 +1,6 @@
 import { I18n } from "@grammyjs/i18n"
-import en from "./en"
-import ru from "./ru"
+import en from "./en.js"
+import ru from "./ru.js"
 
 export const i18n = new I18n({
     defaultLocale: "en",

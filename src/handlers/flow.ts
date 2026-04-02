@@ -1,7 +1,7 @@
 import { Bot, InlineKeyboard } from "grammy"
-import { BotContext } from "../bot"
-import { CandidateModel } from "../models/index"
-import { QUESTIONS, CONFIRMATION_MESSAGE, Question } from "../flow/questions"
+import { BotContext } from "../bot.js"
+import { CandidateModel } from "../models/index.js"
+import { QUESTIONS, CONFIRMATION_MESSAGE, Question } from "../flow/questions.js"
 
 const ADMIN_IDS: number[] = (process.env.ADMIN_IDS ?? '')
     .split(',')

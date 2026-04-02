@@ -1,6 +1,6 @@
 import "dotenv/config"
-import { createBot } from "./bot"
-import { connectDB } from "./db"
+import { createBot } from "./bot.js"
+import { connectDB } from "./db.js"
 
 const token = process.env.BOT_TOKEN
 if (!token) throw new Error("BOT_TOKEN missing")
